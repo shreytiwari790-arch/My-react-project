@@ -1,0 +1,11 @@
+.innertext h2{
+    font-size: 3rem;
+    font-weight:300;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(223, 12, 12);
+}
+.innertext p{
+    color:grey;
+    padding: 10px 100px;
+    font-size: 19px;
+}

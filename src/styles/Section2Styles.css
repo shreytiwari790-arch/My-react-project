@@ -1,0 +1,119 @@
+.section2 {
+  width: 100%;
+  padding: 100px 20px 300px;
+  background: url("../Food_Assets/assets/about/about-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.section2 h1{
+    font-size: 3.5rem;
+}
+.section p{
+    color:grey;
+    padding: 20px 30px;
+    font-size: 19px;
+}
+.about-wrapper{
+    background: rgba(211, 177, 25, 0.945);
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.about-box {
+  display: flex;
+  justify-content: center;
+}
+
+.about-icon {
+  max-width: 260px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-icon img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.about-icon h1 {
+  font-size: 24px;
+  min-height: 60px;   /* 🔑 KEY FIX */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-icon p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 10px;
+  color: #111;
+}
+
+
+
+
+
+.section2-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section2-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.section2-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section2-title {
+    font-size: 30px;
+  }
+
+  .section2-text {
+    font-size: 16px;
+  }
+}
+/* Base button style */
+/* Base button style */
+/* Button (Link styled as button) */
+.section2 .btn {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 36px;
+
+  background-color: #e63946; /* red */
+  color: #ffffff;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.section2 .btn:hover {
+  background-color: #c62828;
+  transform: translateY(-2px);
+}
+
+/* Optional focus/active */
+.section2 .btn:active {
+  transform: translateY(0);
+}
+

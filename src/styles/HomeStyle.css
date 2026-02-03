@@ -1,0 +1,148 @@
+.outer {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding-top: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.m1 img {
+    margin-top: 3%;
+    /* max-width:80%; */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.m2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     /* start from top */
+           /* horizontally center the text column */
+    
+              /* center the text itself */
+}
+.m2{
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+.m2 .text{
+    display: block;
+    
+}
+.m2 .text h1{
+    font-size: 80px;
+    
+}
+
+.m2 h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.m2 h2 {
+    
+    font-size: 2rem;
+}
+
+.m2 p {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .outer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .m2 {
+        align-items: center;
+    }
+}
+
+.heart-icon {
+  fill: #999;          /* default gray */
+  cursor: pointer;
+  transition: fill 0.3s ease, transform 0.2s ease;
+}
+
+.heart-icon:hover {
+  fill: #dc3545;       /* red on hover */
+  transform: scale(1.15);
+}
+
+
+.price h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ads-box{
+    text-align: right;
+    padding: 80px 35px 50px;
+    border-radius: 6px;
+}
+
+.ads_img{
+    background: url("../Food_Assets/assets/menu/ads-1.jpg") no-repeat center center;
+    background-size: cover;
+}
+.ads_img2{
+     background: url("../Food_Assets/assets/menu/ads-2.jpg") no-repeat center center;
+    background-size: cover;
+}
+.btttn {
+  background-color: #dc3545;   /* red */
+  color: #fff;                 /* white text */
+  padding: 10px 22px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;       /* IMPORTANT */
+  text-decoration: none;       /* for Link */
+  cursor: pointer;
+}
+
+.btttn:hover {
+  background-color: #bb2d3b;
+  color: #fff;
+}
+.ratingss{
+    display: flex;;
+    justify-content: center;
+}
+.promotion_section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: rgb(218, 208, 208);
+}
+
+
+
+
+.promotion_section h2 {
+font-size: 3.25rem;
+margin-bottom: 25px;
+}
+.promotion_section p {
+font-size: 1.125rem;
+}
+
+.promotion_section ul{
+padding-left: 15px;
+}
+.bg_parallax_scroll{
+    background:url("../Food_Assets/assets/parallax/bg.jpg")no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height:700px ;
+}
