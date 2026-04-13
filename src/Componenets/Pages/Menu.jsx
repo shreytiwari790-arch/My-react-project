@@ -1,11 +1,14 @@
 import React from 'react'
+import Layout from '../Layouts/Layout'
 import Section3 from './Section3'
 
 const Menu = () => {
   return (
-    <div>
-      <Section3/>
-    </div>
+    <Layout>
+      <div>
+        <Section3/>
+      </div>
+    </Layout>
   )
 }
 

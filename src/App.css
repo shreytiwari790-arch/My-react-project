@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+body {
+  padding-top: 50px;
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-rtl {
+  animation: slideRightToLeft 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}

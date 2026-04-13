@@ -1,0 +1,112 @@
+/* Import both fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Bebas+Neue&display=swap');
+
+.shopsection {
+    background-color: rgba(211, 177, 25, 0.945);
+    padding: 100px 0 0;
+}
+
+.shopsection h4 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: rgb(111, 78, 55);
+    font-family: 'Poppins', sans-serif;
+}
+
+.shopsection h2 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: rgb(111, 78, 55);
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1.1;
+}
+
+.shopsection p {
+    font-size: 1.125rem;
+    padding-right: 10%;
+    margin-bottom: 40px;
+    color: rgb(111, 78, 55);
+    font-family: 'Poppins', sans-serif;
+}
+
+.shopsection .store {
+    max-width: 100%;
+}
+/* Import both fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Bebas+Neue&display=swap');
+
+.shopsection {
+    background-color: rgba(211, 177, 25, 0.945);
+    padding: 100px 0 0;
+}
+
+.shopsection h4 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: rgb(111, 78, 55);
+    font-family: 'Poppins', sans-serif;
+}
+
+.shopsection h2 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: rgb(111, 78, 55);
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1.1;
+}
+
+.shopsection p {
+    font-size: 1.125rem;
+    padding-right: 10%;
+    margin-bottom: 40px;
+    color: rgb(111, 78, 55);
+    font-family: 'Poppins', sans-serif;
+}
+
+.shopsection .store {
+    max-width: 100%;
+}
+/* Import both fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Bebas+Neue&display=swap');
+
+.shopsection {
+    background-color: rgba(211, 177, 25, 0.945);
+    padding: 100px 0 0;
+}
+
+.shopsection h4 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: rgb(111, 78, 55);
+    font-family: 'Poppins', sans-serif;
+}
+
+.shopsection h2 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: rgb(111, 78, 55);
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1.1;
+}
+
+.shopsection p {
+    font-size: 1.125rem;
+    padding-right: 10%;
+    margin-bottom: 40px;
+    color: rgb(111, 78, 55);
+    font-family: 'Poppins', sans-serif;
+}
+
+.shopsection .store {
+    max-width: 100%;
+}
+.carousel {
+    margin-top: 50px;
+}
+
+.carousel-item {
+    text-align: center;
+}

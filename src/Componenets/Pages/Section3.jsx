@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import React, { useState, useEffect } from 'react'
+import { Container, Row, Col, Spinner } from 'react-bootstrap'
 import "../../styles/Section3.css"
 // Images
 import Image1 from "../../Food_Assets/assets/menu/burger-11.jpg"
@@ -16,6 +16,8 @@ import Ad2 from "../../Food_Assets/assets/menu/ads-2.jpg"
 // Card Component
 import Cards from '../Layouts/Cards'
 import { Link } from 'react-router-dom'
+import { getDocs, collection } from "firebase/firestore";
+import { db } from "../../firebase";
 
 // Mock Data
 const mockData = [
@@ -109,6 +111,28 @@ const renderRatingIcons = (rating) => {
 };
 
 const Section3 = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const getData = async () => {
+    try {
+      const snapshot = await getDocs(collection(db, "products"));
+      const data = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setProducts(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <section className="py-5">
       <Container>
@@ -126,25 +150,31 @@ const Section3 = () => {
 
         {/* Cards Grid */}
         <Row>
-          {mockData.map((item) => (
-            <Col
-              key={item.id}
-              lg={3}
-              md={4}
-              sm={6}
-              xs={12}
-              className="mb-4"
-            >
-              <Cards
-                image={item.image}
-                title={item.title}
-                paragraph={item.paragraph}
-                rating={item.rating}
-                price={item.price}
-                renderRatingIcons={renderRatingIcons}
-              />
+          {loading ? (
+            <Col xs={12} className="text-center py-5">
+              <Spinner animation="border" variant="danger" />
             </Col>
-          ))}
+          ) : (
+            products.map((item) => (
+              <Col
+                key={item.id}
+                lg={3}
+                md={4}
+                sm={6}
+                xs={12}
+                className="mb-4"
+              >
+                <Cards
+                  image={item.image}
+                  title={item.name || "Unnamed Item"}
+                  paragraph={item.description || "No description available."}
+                  rating={item.rating || 0}
+                  price={item.price || "0.00"}
+                  renderRatingIcons={renderRatingIcons}
+                />
+              </Col>
+            ))
+          )}
         </Row>
         <Row className='pt-5'>
           <Col sm={6} lg={5}>
@@ -162,7 +192,7 @@ const Section3 = () => {
             <h5>Cheese fries</h5>
             <Link to="/" className='btttn btn_red'>
             Learn More
-            </Link>
+            </Link>4
           </div>
           </Col>
         </Row>
